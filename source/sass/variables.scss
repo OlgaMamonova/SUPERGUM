@@ -6,21 +6,24 @@ $color-sapphire: #102654;
 $color-torch-red: #ed0233;
 $color-resolution-blue: #1c3374;
 $color-black-russian: #030a1a;
+$color-spindle: #b6bdcc;
+$color-light-slate-grey: #74819c;
 
 // Gradient
 
-
 // Typography
-$fz-default:                        16px;
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
+$fz-default: 16px;
+$ff-rouble: "Rouble", "Arial", sans-serif;
+$ff-alumni-sans: "Alumni Sans", "Arial", sans-serif;
+$ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
 
 // Animation
-$tf-default:                        ease;
-$trans-default:                     0.3s $tf-default;
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
 
 // Viewports
-$vp-768:                            768px;
-$vp-1200:                           1200px;
+$vp-768: 768px;
+$vp-1200: 1200px;
 
 // Retina
-$retina-dppx:                       2dppx;
+$retina-dppx: 2dppx;

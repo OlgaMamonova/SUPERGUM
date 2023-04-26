@@ -17,15 +17,12 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  // font-family: $ff-placeholder;
+  font-family: $ff-roboto-condensed;
   color: $color-sapphire;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // оптимизация выравнивания шрифта относительно центра строки
   text-rendering: optimizeLegibility;
-  // если по прежнему есть проблемы с выравниванием
-  // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
 }
 
 body {
@@ -47,10 +44,6 @@ video {
   height: auto;
 }
 
-textarea {
-  resize: none;
-}
-
 // chrome autofill background removal
 // если на проекте у инпутов используются разные цвета фонов\текста -
 // удалите это из глобала и используйте локально с нужными цветами
@@ -64,8 +57,7 @@ input:-webkit-autofill {
 }
 
 // firefox placeholder \ invalid fix + ios bdrs
-input,
-textarea {
+input {
   border-radius: 0;
 
   &::placeholder {
@@ -77,8 +69,6 @@ textarea {
   }
 }
 
-
-
 // ie11 X removal
 input {
   &::-ms-clear,
@@ -87,16 +77,8 @@ input {
   }
 }
 
-
 // ios button \ inputs reset
-
-input:matches([type="email"],
-  [type="number"],
-  [type="password"],
-  [type="search"],
-  [type="tel"],
-  [type="text"],
-  [type="url"]) {
+input:matches([type="tel"], [type="text"]) {
   appearance: none;
 }
 
