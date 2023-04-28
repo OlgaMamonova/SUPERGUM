@@ -1,4 +1,5 @@
 .title {
+  margin: 0;
   font-family: $ff-alumni-sans;
   font-weight: 600;
   font-size: 54px;
@@ -8,10 +9,12 @@
   @include vp-1199 {
     font-size: 42px;
     line-height: 50.4px;
+    letter-spacing: 1.2px;
   }
 
   @include vp-767 {
     font-size: 32px;
     line-height: 38.4px;
+    letter-spacing: 1px;
   }
 }

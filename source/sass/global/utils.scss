@@ -41,6 +41,12 @@
   clip-path: inset(100%);
 }
 
+.desktop-only {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
 .scroll-lock-ios {
   position: fixed;
 
