@@ -1851,6 +1851,100 @@ button,
   width: 100%;
   height: auto;
 }
+@media (max-width: 767px) {
+  .about img {
+    margin-bottom: 40px;
+  }
+}
+
+.about__video {
+  position: relative;
+}
+
+.about__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 72px;
+  height: 72px;
+  border: none;
+  cursor: pointer;
+  background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  border-radius: 50%;
+}
+@media (max-width: 1199px) {
+  .about__video-button {
+    width: 52px;
+    height: 52px;
+  }
+}
+.about__video-button:hover, .about__video-button:focus {
+  opacity: 0.8;
+}
+.about__video-button:active {
+  opacity: 0.6;
+}
+
+.about__video-button::before,
+.about__video-button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.about__video-button::before {
+  content: url(../img/svg/play.svg);
+  -webkit-transform: translateX(-42%) translateY(-50%);
+      -ms-transform: translateX(-42%) translateY(-50%);
+          transform: translateX(-42%) translateY(-50%);
+  width: 17px;
+  height: 17px;
+}
+@media (max-width: 1199px) {
+  .about__video-button::before {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.about__video-button::after {
+  content: url(../img/svg/circle.svg);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 1199px) {
+  .about__video-button::after {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.about__video {
+  width: 87.7%;
+  margin-top: -113px;
+  margin-left: 105.3%;
+}
+@media (max-width: 1199px) {
+  .about__video {
+    width: 39.23%;
+    margin-top: -84px;
+    margin-left: 30.38%;
+  }
+}
+@media (max-width: 767px) {
+  .about__video {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
 
 /* @mixin hover-focus {
     @media (hover: hover) {
