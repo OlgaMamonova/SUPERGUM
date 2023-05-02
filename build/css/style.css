@@ -2200,6 +2200,7 @@ button,
 }
 
 .memberships {
+  position: relative;
   background-color: #f8f9fc;
   padding-top: 121px;
   padding-bottom: 120px;
@@ -2214,6 +2215,23 @@ button,
   .memberships {
     padding-top: 64px;
     padding-bottom: 70px;
+  }
+}
+
+.memberships img {
+  position: absolute;
+  right: 0;
+  bottom: -151px;
+}
+@media (max-width: 1199px) {
+  .memberships img {
+    bottom: -125px;
+    width: 348px;
+  }
+}
+@media (max-width: 767px) {
+  .memberships img {
+    display: none;
   }
 }
 
@@ -2423,6 +2441,11 @@ button,
   z-index: 0;
   margin-bottom: 34px;
 }
+@media (max-width: 1249px) {
+  .memberships__info-card p {
+    font-size: 56px;
+  }
+}
 @media (max-width: 767px) {
   .memberships__info-card p {
     font-size: 48px;
@@ -2484,7 +2507,7 @@ button,
   border: none;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  padding: 28px;
+  padding: 26px;
 }
 
 /* @mixin hover-focus {

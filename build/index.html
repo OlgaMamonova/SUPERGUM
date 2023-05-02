@@ -231,7 +231,7 @@
             </ul>
             <div class="memberships__info-wrapper" data-tabs="content">
               <ul class="memberships__list" data-tabs="element">
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>С&nbsp;тренером</h3>
                   <span>12&nbsp;занятий</span>
                   <p>
@@ -250,7 +250,7 @@
                     >купить абонемент</a
                   >
                 </li>
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>Дневной</h3>
                   <span>с&nbsp;8:00 до&nbsp;17:00</span>
                   <p>
@@ -269,7 +269,7 @@
                     >купить абонемент</a
                   >
                 </li>
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>Полный день</h3>
                   <span>с&nbsp;8:00 до&nbsp;22:00</span>
                   <p>
@@ -290,7 +290,7 @@
                 </li>
               </ul>
               <ul class="memberships__list" data-tabs="element">
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>С&nbsp;тренером</h3>
                   <span>12&nbsp;занятий</span>
                   <p>
@@ -309,7 +309,7 @@
                     >купить абонемент</a
                   >
                 </li>
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>Дневной</h3>
                   <span>с&nbsp;8:00 до&nbsp;17:00</span>
                   <p>
@@ -328,7 +328,7 @@
                     >купить абонемент</a
                   >
                 </li>
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>Полный день</h3>
                   <span>с&nbsp;8:00 до&nbsp;22:00</span>
                   <p>
@@ -349,7 +349,7 @@
                 </li>
               </ul>
               <ul class="memberships__list" data-tabs="element">
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>С&nbsp;тренером</h3>
                   <span>12&nbsp;занятий</span>
                   <p>
@@ -368,7 +368,7 @@
                     >купить абонемент</a
                   >
                 </li>
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>Дневной</h3>
                   <span>с&nbsp;8:00 до&nbsp;17:00</span>
                   <p>
@@ -387,7 +387,7 @@
                     >купить абонемент</a
                   >
                 </li>
-                <li class="memberships__info-card">
+                <li class="memberships__info-card" tabindex="0">
                   <h3>Полный день</h3>
                   <span>с&nbsp;8:00 до&nbsp;22:00</span>
                   <p>
@@ -409,6 +409,33 @@
               </ul>
             </div>
           </div>
+          <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 1199px)"
+              srcset="img/weights-tablet.webp 1x, img/weights-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                img/weights-desktop.webp    1x,
+                img/weights-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="img/weights-tablet.png 1x, img/weights-tablet@2x.png 2x"
+            />
+            <source
+              srcset="img/weights-desktop.png 1x, img/weights-desktop@2x.png 2x"
+            />
+            <img
+              src="img/weights-desktop.png"
+              width="289"
+              height="500"
+              alt=""
+            />
+          </picture>
         </section>
         <section class="super-games container">
           <div class="super-games__content">
@@ -426,7 +453,6 @@
                 <dd>12:00</dd>
               </dl>
             </div>
-
             <p>Ежегодные соревнования по&nbsp;CrossFit</p>
             <a class="button" href="#">заполнить заявку</a>
           </div>
@@ -481,6 +507,283 @@
               alt="Фотография спортсмена."
             />
           </picture>
+        </section>
+        <section class="trainers container">
+          <h2 class="title">Тренеры</h2>
+          <ul class="trainers__list">
+            <li class="trainers__card">
+              <div class="trainers__card-content">
+                <h3>Анна Павлова</h3>
+                <div class="trainers__card-hidden-content">
+                  <span>CrossFit</span>
+                  <ul class="trainers__skills-list">
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/trainers/trainer1-desktop.webp    1x,
+                    img/trainers/trainer1-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/trainers/trainer1-desktop.jpg    1x,
+                    img/trainers/trainer1-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/trainers/trainer1-desktop.jpg"
+                  width="260"
+                  height="294"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li class="trainers__card">
+              <div class="trainers__card-content">
+                <h3>Алексей Лавров</h3>
+                <div class="trainers__card-hidden-content">
+                  <span>CrossFit</span>
+                  <ul class="trainers__skills-list">
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/trainers/trainer2-desktop.webp    1x,
+                    img/trainers/trainer2-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/trainers/trainer2-desktop.jpg    1x,
+                    img/trainers/trainer2-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/trainers/trainer2-desktop.jpg"
+                  width="260"
+                  height="294"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li class="trainers__card">
+              <div class="trainers__card-content">
+                <h3>Александр Пашков</h3>
+                <div class="trainers__card-hidden-content">
+                  <span>CrossFit</span>
+                  <ul class="trainers__skills-list">
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/trainers/trainer3-desktop.webp    1x,
+                    img/trainers/trainer3-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/trainers/trainer3-desktop.jpg    1x,
+                    img/trainers/trainer3-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/trainers/trainer3-desktop.jpg"
+                  width="260"
+                  height="294"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li class="trainers__card">
+              <div class="trainers__card-content">
+                <h3>Мария Кетова</h3>
+                <div class="trainers__card-hidden-content">
+                  <span>CrossFit</span>
+                  <ul class="trainers__skills-list">
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/trainers/trainer4-desktop.webp    1x,
+                    img/trainers/trainer4-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/trainers/trainer4-desktop.jpg    1x,
+                    img/trainers/trainer4-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/trainers/trainer4-desktop.jpg"
+                  width="260"
+                  height="294"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li class="trainers__card">
+              <div class="trainers__card-content">
+                <h3>Артем Сладков</h3>
+                <div class="trainers__card-hidden-content">
+                  <span>CrossFit</span>
+                  <ul class="trainers__skills-list">
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/trainers/trainer3-desktop.webp    1x,
+                    img/trainers/trainer3-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/trainers/trainer3-desktop.jpg    1x,
+                    img/trainers/trainer3-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/trainers/trainer3-desktop.jpg"
+                  width="260"
+                  height="294"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li class="trainers__card">
+              <div class="trainers__card-content">
+                <h3>Ольга Соколова</h3>
+                <div class="trainers__card-hidden-content">
+                  <span>CrossFit</span>
+                  <ul class="trainers__skills-list">
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/trainers/trainer1-desktop.webp    1x,
+                    img/trainers/trainer1-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/trainers/trainer1-desktop.jpg    1x,
+                    img/trainers/trainer1-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/trainers/trainer1-desktop.jpg"
+                  width="260"
+                  height="294"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li class="trainers__card">
+              <div class="trainers__card-content">
+                <h3>Тимур Жумехов</h3>
+                <div class="trainers__card-hidden-content">
+                  <span>CrossFit</span>
+                  <ul class="trainers__skills-list">
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/trainers/trainer2-desktop.webp    1x,
+                    img/trainers/trainer2-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/trainers/trainer2-desktop.jpg    1x,
+                    img/trainers/trainer2-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/trainers/trainer2-desktop.jpg"
+                  width="260"
+                  height="294"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <li class="trainers__card">
+              <div class="trainers__card-content">
+                <h3>София Лаврова</h3>
+                <div class="trainers__card-hidden-content">
+                  <span>CrossFit</span>
+                  <ul class="trainers__skills-list">
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/trainers/trainer4-desktop.webp    1x,
+                    img/trainers/trainer4-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/trainers/trainer4-desktop.jpg    1x,
+                    img/trainers/trainer4-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/trainers/trainer4ы-desktop.jpg"
+                  width="260"
+                  height="294"
+                  alt=""
+                />
+              </picture>
+            </li>
+          </ul>
         </section>
       </main>
       <footer>

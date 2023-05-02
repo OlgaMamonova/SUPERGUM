@@ -37,6 +37,11 @@
 }
 
 // Desktop first
+@mixin vp-1249 {
+  @media (max-width: ($vp-1250 - 1px)) {
+    @content;
+  }
+}
 
 @mixin vp-1199 {
   @media (max-width: ($vp-1200 - 1px)) {
@@ -52,6 +57,24 @@
 
 @mixin vp-desktop-only {
   @media (min-width: $vp-1200) {
+    @content;
+  }
+}
+
+@mixin vp-1199-retina {
+  @media (max-width: ($vp-1200 - 1px)) and (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin vp-767-retina {
+  @media (max-width: ($vp-768 - 1px)) and (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin desktop-retina {
+  @media (min-width: ($vp-1200)) and (min-resolution: $retina-dppx) {
     @content;
   }
 }
