@@ -1,0 +1,70 @@
+.free-class {
+  color: $color-white;
+  padding-top: 66px;
+  padding-bottom: 70px;
+  width: 70.69%;
+
+  @include vp-1199 {
+    width: 100%;
+    background-color: $color-sapphire;
+    padding-top: 60px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+  }
+}
+
+.free-class__form {
+  @include vp-1199 {
+    width: 69.62%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 47px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.free-class__form h2 {
+  font-weight: 800;
+  margin-bottom: 25px;
+
+  @include vp-1199 {
+    font-weight: 700;
+    margin-bottom: 31px;
+  }
+
+  @include vp-767 {
+    letter-spacing: 0.8px;
+    margin-bottom: 33px;
+  }
+}
+
+.free-class__input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 10px;
+
+  @include vp-1199 {
+    gap: 60px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-bottom: 20px;
+  }
+}
+.free-class__form button {
+  width: 100%;
+  letter-spacing: 0.7px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 16.41px;
+}

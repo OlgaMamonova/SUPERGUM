@@ -1,0 +1,38 @@
+.section-wrapper {
+  position: relative;
+  background: linear-gradient(to right, $color-sapphire 50%, $color-white 50%);
+
+  @include vp-1199 {
+    background: none;
+  }
+}
+
+.section-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #74819c;
+
+  @include vp-1199 {
+    width: 0;
+  }
+}
+
+.section-wrapper__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 45px;
+
+  @include vp-1199 {
+    display: block;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
