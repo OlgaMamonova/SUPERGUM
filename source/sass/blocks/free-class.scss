@@ -1,13 +1,14 @@
 .free-class {
   color: $color-white;
   padding-top: 66px;
-  padding-bottom: 70px;
+  padding-bottom: 64px;
   width: 70.69%;
 
   @include vp-1199 {
     width: 100%;
     background-color: $color-sapphire;
     padding-top: 60px;
+    padding-bottom: 70px;
   }
 
   @include vp-767 {

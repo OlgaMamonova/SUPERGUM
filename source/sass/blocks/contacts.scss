@@ -1,7 +1,7 @@
 .contacts {
   width: 79.31%;
   padding-top: 58px;
-  padding-bottom: 70px;
+  padding-bottom: 64px;
   margin-left: auto;
 
   @include vp-1199 {
@@ -13,7 +13,7 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 63px 15px;
+    padding: 63px 15px 61px 15px;
   }
 }
 
@@ -54,7 +54,7 @@
   position: absolute;
   width: 1px;
   height: 90%;
-  background-color: #74819c;
+  background-color: $color-light-slate-grey;
   top: 6px;
   left: 50.9%;
 

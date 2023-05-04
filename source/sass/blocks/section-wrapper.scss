@@ -14,7 +14,7 @@
   right: 0;
   width: 50%;
   height: 1px;
-  background-color: #74819c;
+  background-color: $color-light-slate-grey;
 
   @include vp-1199 {
     width: 0;
