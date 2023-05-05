@@ -510,144 +510,573 @@
         </section>
         <section class="trainers container">
           <h2 class="title">Тренеры</h2>
-          <ul class="trainers__list">
-            <li class="trainers__card" tabindex="0">
-              <div class="trainers__card-content">
-                <h3>Анна Павлова</h3>
-                <div class="trainers__card-hidden-content">
-                  <span>CrossFit</span>
-                  <ul class="trainers__skills-list">
-                    <li>Certified Level&nbsp;3 Trainer</li>
-                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+          <div class="trainers__slider swiper-container">
+            <button
+              class="trainers__slider-button-prev slider-button slider-button--prev"
+            ></button>
+            <button
+              class="trainers__slider-button-next slider-button slider-button--next"
+            ></button>
+            <ul class="trainers__list swiper-wrapper">
+              <li class="trainers__card swiper-slide" tabindex="0">
+                <div class="trainers__card-content">
+                  <h3>Анна Павлова</h3>
+                  <div class="trainers__card-hidden-content">
+                    <span>CrossFit</span>
+                    <ul class="trainers__skills-list">
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/trainers/trainer1-desktop.webp    1x,
-                    img/trainers/trainer1-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  srcset="
-                    img/trainers/trainer1-desktop.jpg    1x,
-                    img/trainers/trainer1-desktop@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/trainers/trainer1-desktop.jpg"
-                  width="260"
-                  height="294"
-                  alt=""
-                />
-              </picture>
-            </li>
-            <li class="trainers__card" tabindex="0">
-              <div class="trainers__card-content">
-                <h3>Алексей Лавров</h3>
-                <div class="trainers__card-hidden-content">
-                  <span>CrossFit</span>
-                  <ul class="trainers__skills-list">
-                    <li>Certified Level&nbsp;3 Trainer</li>
-                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.webp    1x,
+                      img/trainers/trainer3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer4-tablet.webp    1x,
+                      img/trainers/trainer4-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/trainers/trainer1-desktop.webp    1x,
+                      img/trainers/trainer1-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.jpg    1x,
+                      img/trainers/trainer3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer4-tablet.jpg    1x,
+                      img/trainers/trainer4-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      img/trainers/trainer1-desktop.jpg    1x,
+                      img/trainers/trainer1-desktop@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/trainers/trainer1-desktop.jpg"
+                    width="260"
+                    height="294"
+                    alt=""
+                  />
+                </picture>
+              </li>
+              <li class="trainers__card swiper-slide" tabindex="0">
+                <div class="trainers__card-content">
+                  <h3>Алексей Лавров</h3>
+                  <div class="trainers__card-hidden-content">
+                    <span>CrossFit</span>
+                    <ul class="trainers__skills-list">
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/trainers/trainer2-desktop.webp    1x,
-                    img/trainers/trainer2-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  srcset="
-                    img/trainers/trainer2-desktop.jpg    1x,
-                    img/trainers/trainer2-desktop@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/trainers/trainer2-desktop.jpg"
-                  width="260"
-                  height="294"
-                  alt=""
-                />
-              </picture>
-            </li>
-            <li class="trainers__card" tabindex="0">
-              <div class="trainers__card-content">
-                <h3>Александр Пашков</h3>
-                <div class="trainers__card-hidden-content">
-                  <span>CrossFit</span>
-                  <ul class="trainers__skills-list">
-                    <li>Certified Level&nbsp;3 Trainer</li>
-                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.webp    1x,
+                      img/trainers/trainer3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer3-tablet.webp    1x,
+                      img/trainers/trainer3-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/trainers/trainer2-desktop.webp    1x,
+                      img/trainers/trainer2-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.jpg    1x,
+                      img/trainers/trainer3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer3-tablet.jpg    1x,
+                      img/trainers/trainer3-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      img/trainers/trainer2-desktop.jpg    1x,
+                      img/trainers/trainer2-desktop@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/trainers/trainer2-desktop.jpg"
+                    width="260"
+                    height="294"
+                    alt=""
+                  />
+                </picture>
+              </li>
+              <li class="trainers__card swiper-slide" tabindex="0">
+                <div class="trainers__card-content">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainers__card-hidden-content">
+                    <span>CrossFit</span>
+                    <ul class="trainers__skills-list">
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/trainers/trainer3-desktop.webp    1x,
-                    img/trainers/trainer3-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  srcset="
-                    img/trainers/trainer3-desktop.jpg    1x,
-                    img/trainers/trainer3-desktop@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/trainers/trainer3-desktop.jpg"
-                  width="260"
-                  height="294"
-                  alt=""
-                />
-              </picture>
-            </li>
-            <li class="trainers__card" tabindex="0">
-              <div class="trainers__card-content">
-                <h3>Мария Кетова</h3>
-                <div class="trainers__card-hidden-content">
-                  <span>CrossFit</span>
-                  <ul class="trainers__skills-list">
-                    <li>Certified Level&nbsp;3 Trainer</li>
-                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.webp    1x,
+                      img/trainers/trainer3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer3-tablet.webp    1x,
+                      img/trainers/trainer3-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/trainers/trainer3-desktop.webp    1x,
+                      img/trainers/trainer3-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.jpg    1x,
+                      img/trainers/trainer3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer3-tablet.jpg    1x,
+                      img/trainers/trainer3-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      img/trainers/trainer3-desktop.jpg    1x,
+                      img/trainers/trainer3-desktop@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/trainers/trainer3-desktop.jpg"
+                    width="260"
+                    height="294"
+                    alt=""
+                  />
+                </picture>
+              </li>
+              <li class="trainers__card swiper-slide" tabindex="0">
+                <div class="trainers__card-content">
+                  <h3>Мария Кетова</h3>
+                  <div class="trainers__card-hidden-content">
+                    <span>CrossFit</span>
+                    <ul class="trainers__skills-list">
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/trainers/trainer4-desktop.webp    1x,
-                    img/trainers/trainer4-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  srcset="
-                    img/trainers/trainer4-desktop.jpg    1x,
-                    img/trainers/trainer4-desktop@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/trainers/trainer4-desktop.jpg"
-                  width="260"
-                  height="294"
-                  alt=""
-                />
-              </picture>
-            </li>
-          </ul>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.webp    1x,
+                      img/trainers/trainer3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer4-tablet.webp    1x,
+                      img/trainers/trainer4-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/trainers/trainer4-desktop.webp    1x,
+                      img/trainers/trainer4-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.jpg    1x,
+                      img/trainers/trainer3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer4-tablet.jpg    1x,
+                      img/trainers/trainer4-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      img/trainers/trainer4-desktop.jpg    1x,
+                      img/trainers/trainer4-desktop@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/trainers/trainer4-desktop.jpg"
+                    width="260"
+                    height="294"
+                    alt=""
+                  />
+                </picture>
+              </li>
+              <li class="trainers__card swiper-slide" tabindex="0">
+                <div class="trainers__card-content">
+                  <h3>Анна Павлова</h3>
+                  <div class="trainers__card-hidden-content">
+                    <span>CrossFit</span>
+                    <ul class="trainers__skills-list">
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.webp    1x,
+                      img/trainers/trainer3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer4-tablet.webp    1x,
+                      img/trainers/trainer4-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/trainers/trainer1-desktop.webp    1x,
+                      img/trainers/trainer1-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.jpg    1x,
+                      img/trainers/trainer3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer4-tablet.jpg    1x,
+                      img/trainers/trainer4-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      img/trainers/trainer1-desktop.jpg    1x,
+                      img/trainers/trainer1-desktop@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/trainers/trainer1-desktop.jpg"
+                    width="260"
+                    height="294"
+                    alt=""
+                  />
+                </picture>
+              </li>
+              <li class="trainers__card swiper-slide" tabindex="0">
+                <div class="trainers__card-content">
+                  <h3>Алексей Лавров</h3>
+                  <div class="trainers__card-hidden-content">
+                    <span>CrossFit</span>
+                    <ul class="trainers__skills-list">
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.webp    1x,
+                      img/trainers/trainer3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer3-tablet.webp    1x,
+                      img/trainers/trainer3-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/trainers/trainer2-desktop.webp    1x,
+                      img/trainers/trainer2-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.jpg    1x,
+                      img/trainers/trainer3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer3-tablet.jpg    1x,
+                      img/trainers/trainer3-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      img/trainers/trainer2-desktop.jpg    1x,
+                      img/trainers/trainer2-desktop@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/trainers/trainer2-desktop.jpg"
+                    width="260"
+                    height="294"
+                    alt=""
+                  />
+                </picture>
+              </li>
+              <li class="trainers__card swiper-slide" tabindex="0">
+                <div class="trainers__card-content">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainers__card-hidden-content">
+                    <span>CrossFit</span>
+                    <ul class="trainers__skills-list">
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.webp    1x,
+                      img/trainers/trainer3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer3-tablet.webp    1x,
+                      img/trainers/trainer3-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/trainers/trainer3-desktop.webp    1x,
+                      img/trainers/trainer3-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.jpg    1x,
+                      img/trainers/trainer3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer3-tablet.jpg    1x,
+                      img/trainers/trainer3-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      img/trainers/trainer3-desktop.jpg    1x,
+                      img/trainers/trainer3-desktop@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/trainers/trainer3-desktop.jpg"
+                    width="260"
+                    height="294"
+                    alt=""
+                  />
+                </picture>
+              </li>
+              <li class="trainers__card swiper-slide" tabindex="0">
+                <div class="trainers__card-content">
+                  <h3>Мария Кетова</h3>
+                  <div class="trainers__card-hidden-content">
+                    <span>CrossFit</span>
+                    <ul class="trainers__skills-list">
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.webp    1x,
+                      img/trainers/trainer3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer4-tablet.webp    1x,
+                      img/trainers/trainer4-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/trainers/trainer4-desktop.webp    1x,
+                      img/trainers/trainer4-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/trainers/trainer3-mobile.jpg    1x,
+                      img/trainers/trainer3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/trainers/trainer4-tablet.jpg    1x,
+                      img/trainers/trainer4-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      img/trainers/trainer4-desktop.jpg    1x,
+                      img/trainers/trainer4-desktop@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/trainers/trainer4-desktop.jpg"
+                    width="260"
+                    height="294"
+                    alt=""
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container">
+            <h2 class="title">Наши преимущества</h2>
+            <ul class="advantages__list">
+              <li class="advantages__card">
+                <span>900<small>кв/м</small></span>
+                <div class="advantages__card-wrapper">
+                  <h3>Площадь</h3>
+                  <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+                </div>
+              </li>
+              <li class="advantages__card">
+                <span>70<small>машин</small></span>
+                <div class="advantages__card-wrapper">
+                  <h3>Собственная парковка</h3>
+                  <p>
+                    Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей
+                    парковке
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__card-central">
+                <h3><span>100</span>Тренажеров</h3>
+                <p>Современные тренажеры на все группы мышц</p>
+              </li>
+              <li class="advantages__card">
+                <span>350<small>мест</small></span>
+                <div class="advantages__card-wrapper">
+                  <h3>Комфорт</h3>
+                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                </div>
+              </li>
+              <li class="advantages__card">
+                <span>5+<small>лет</small></span>
+                <div class="advantages__card-wrapper">
+                  <h3>Тренерский опыт</h3>
+                  <p>
+                    Добивайтесь своих целей быстрее с&nbsp;профессиональным
+                    тренером
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
         <div class="section-wrapper">
           <div class="section-wrapper__layout">
@@ -730,7 +1159,6 @@
             >SUPERGYM</a
           >
           <nav class="footer__nav">
-            <!-- <ul class="footer__nav-list"> -->
             <ul class="footer__nav-list footer__nav-list--first-column">
               <li class="footer__mobile-logo">
                 <a class="footer__logo logo" href="#start">SUPERGYM</a>
@@ -753,8 +1181,6 @@
                 <a class="footer__nav-link" href="#"> Расписание </a>
               </li>
             </ul>
-
-            <!-- </ul> -->
           </nav>
           <ul class="footer__social social">
             <li>

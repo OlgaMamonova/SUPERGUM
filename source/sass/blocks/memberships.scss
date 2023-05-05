@@ -19,6 +19,7 @@
   position: absolute;
   right: 0;
   bottom: -151px;
+  z-index: -1;
 
   @include vp-1199 {
     bottom: -125px;
@@ -201,6 +202,10 @@
     font-size: 56px;
   }
 
+  @include  vp-1199 {
+    font-size: 60px;
+  }
+
   @include vp-767 {
     font-size: 48px;
     line-height: 72px;
@@ -217,7 +222,7 @@
   display: block;
   position: absolute;
   bottom: -6px;
-  left: -22px;
+  left: -20px;
   font-size: 100px;
   line-height: 150px;
   font-weight: 700;
