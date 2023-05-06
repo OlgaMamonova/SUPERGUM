@@ -19,7 +19,7 @@
   position: absolute;
   right: 0;
   bottom: -151px;
-  z-index: -1;
+  z-index: 0;
 
   @include vp-1199 {
     bottom: -125px;
@@ -111,6 +111,15 @@
   &.is-active::after {
     background-color: $color-crimson;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .memberships__list {
@@ -121,6 +130,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
+  z-index: 1;
 
   @include vp-1199 {
     display: flex;
@@ -202,7 +212,7 @@
     font-size: 56px;
   }
 
-  @include  vp-1199 {
+  @include vp-1199 {
     font-size: 60px;
   }
 
@@ -252,16 +262,21 @@
 }
 
 .memberships__info-card:hover,
-.memberships__info-card:focus {
+.memberships__info-card:focus-within {
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-width: 7px;
   border-image-slice: 1;
 }
 
 .memberships__info-card:hover .memberships__buy-button,
-.memberships__info-card:focus .memberships__buy-button {
+.memberships__info-card:focus-within .memberships__buy-button {
   color: $color-white;
   border: none;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   padding: 26px;
+}
+
+.memberships__info-wrapper {
+  background-color: $color-ghost-white;
+  z-index: 1;
 }

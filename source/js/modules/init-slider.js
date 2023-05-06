@@ -18,11 +18,13 @@ const initTrainersSlider = () => {
           320: {
             slidesPerView: 1,
             spaceBetween: 20,
+            initialSlide: 3,
           },
 
           768: {
             slidesPerView: 2,
             spaceBetween: 30,
+            initialSlide: 2,
           },
 
           1200: {
@@ -31,8 +33,7 @@ const initTrainersSlider = () => {
             spaceBetween: 40,
           },
         },
-      })
-    )();
+      }))();
   }
 };
 export {initTrainersSlider};

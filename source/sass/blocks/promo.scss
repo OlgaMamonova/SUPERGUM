@@ -70,6 +70,15 @@
     line-height: 24px;
     letter-spacing: 0.4px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .promo__content {

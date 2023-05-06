@@ -15,7 +15,15 @@
 
   cursor: pointer;
   user-select: none;
-  transition: opacity $trans-default;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   &:disabled {
     opacity: 0.5;

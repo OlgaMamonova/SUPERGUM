@@ -101,3 +101,14 @@
     margin-bottom: 19px;
   }
 }
+
+.contacts__link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
