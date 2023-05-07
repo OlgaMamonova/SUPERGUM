@@ -513,9 +513,11 @@
           <div class="trainers__slider swiper-container">
             <button
               class="trainers__slider-button-prev slider-button slider-button--prev"
+              aria-label="предыдущий слайд"
             ></button>
             <button
               class="trainers__slider-button-next slider-button slider-button--next"
+              aria-label="следующий слайд"
             ></button>
             <ul class="trainers__list swiper-wrapper">
               <li class="trainers__card swiper-slide" tabindex="0">
@@ -1076,6 +1078,162 @@
                     тренером
                   </p>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="promotion container">
+          <h2 class="title">Акции</h2>
+          <ul class="promotion__list">
+            <li class="promotion__special-offer">
+              <div class="promo__special-offer-text">
+                <span><small>Год</small>4999</span>
+                <p>Безлимитный абонемент в тренажерный зал</p>
+                <a href="#">подробнее</a>
+              </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/promotion-mobile.webp    1x,
+                    img/promotion-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    img/promotion-tablet.webp    1x,
+                    img/promotion-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/promotion-desktop.webp    1x,
+                    img/promotion-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/promotion-mobile.jpg    1x,
+                    img/promotion-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    img/promotion-tablet.jpg    1x,
+                    img/promotion-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    img/promotion-desktop.jpg    1x,
+                    img/promotion-desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/promotion-desktop.jpg"
+                  width="280"
+                  height="462"
+                  alt=""
+                />
+              </picture>
+            </li>
+            <ul class="promotion__small-list">
+              <li class="promotion__offer">
+                <span>Месяц бесплатно</span>
+                <p>Приведи друга, получи абонемент в подарок</p>
+                <a href="#">подробнее</a>
+              </li>
+              <li class="promotion__offer">
+                <span>Скидка 20%</span>
+                <p>Корпоративный фитнес с командой</p>
+                <a href="#">подробнее</a>
+              </li>
+            </ul>
+          </ul>
+        </section>
+
+        <section class="reviews container">
+          <h2 class="title">Отзывы</h2>
+          <div class="reviews__slider swiper">
+            <button
+              class="reviews__slider-button-prev slider-button slider-button--prev"
+              aria-label="предыдущий слайд"
+            ></button>
+            <button
+              class="reviews__slider-button-next slider-button slider-button--next"
+              aria-label="следующий слайд"
+            ></button>
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__card swiper-slide">
+                <div class="reviews__card-img-wrapper">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/review1.webp 1x, img/review1@2x.webp 2x"
+                    />
+                    <source
+                      srcset="img/review1.jpg 1x, img/review1@2x.jpg 2x"
+                    />
+                    <img src="img/review1.jpg" alt="" />
+                  </picture>
+                </div>
+
+                <h3>Анна Орлова</h3>
+                <p>
+                  &laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что
+                  в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал
+                  дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
+                  очередей&raquo;
+                </p>
+              </li>
+              <li class="reviews__card swiper-slide">
+                <div class="reviews__card-img-wrapper">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/review1.webp 1x, img/review1@2x.webp 2x"
+                    />
+                    <source
+                      srcset="img/review1.jpg 1x, img/review1@2x.jpg 2x"
+                    />
+                    <img src="img/review1.jpg" alt="" />
+                  </picture>
+                </div>
+                <h3>Ольга Соколова</h3>
+                <p>
+                  &laquo;Отличный клуб, где каждый найдет для себя занятие!
+                  Большой выбор тренажеров, разнообразные групповые программы .
+                  Внимательный и&nbsp;доброжелательный персонал,
+                  профессиональные тренера. Спасибо за&nbsp;качественный подбор
+                  кадров! Особая благодарность тренеру Александру Пашкову
+                  за&nbsp;внимательность, индивидуальный подход, советы
+                  и&nbsp;мотивацию. Он&nbsp;заряжает позитивом
+                  и&nbsp;положительными эмоциями&raquo;
+                </p>
+              </li>
+              <li class="reviews__card swiper-slide">
+                <div class="reviews__card-img-wrapper">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/review1.webp 1x, img/review1@2x.webp 2x"
+                    />
+                    <source
+                      srcset="img/review1.jpg 1x, img/review1@2x.jpg 2x"
+                    />
+                    <img src="img/review1.jpg" alt="" />
+                  </picture>
+                </div>
+                <h3>Зоя Маркова</h3>
+                <p>
+                  &laquo;Комфортный, чистый и&nbsp;светлый клуб. Приветливый персонал, удобная парковка.&raquo;
+                </p>
               </li>
             </ul>
           </div>
