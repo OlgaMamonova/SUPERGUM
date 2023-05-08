@@ -69,14 +69,6 @@ input {
   }
 }
 
-// ie11 X removal
-input {
-  &::-ms-clear,
-  &::-ms-reveal {
-    display: none;
-  }
-}
-
 // ios button \ inputs reset
 input:matches([type="tel"], [type="text"]) {
   appearance: none;
