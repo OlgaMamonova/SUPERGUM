@@ -171,7 +171,11 @@
                 alt=""
               />
             </picture>
-            <button class="about__video-button" type="button">
+            <button
+              class="about__video-button"
+              type="button"
+              aria-label="Воспроизвести видео."
+            >
               <svg
                 class="about__video-button-play"
                 width="13"
@@ -1082,13 +1086,13 @@
             </ul>
           </div>
         </section>
-        <section class="promotion container">
+        <section class="promotions container">
           <h2 class="title">Акции</h2>
-          <ul class="promotion__list">
-            <li class="promotion__special-offer">
-              <div class="promo__special-offer-text">
-                <span><small>Год</small>4999</span>
-                <p>Безлимитный абонемент в тренажерный зал</p>
+          <ul class="promotions__list">
+            <li class="promotions__special-offer">
+              <div class="promotions__special-offer-text">
+                <h3><small>Год</small>4999</h3>
+                <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
                 <a href="#">подробнее</a>
               </div>
               <picture>
@@ -1143,21 +1147,18 @@
                 />
               </picture>
             </li>
-            <ul class="promotion__small-list">
-              <li class="promotion__offer">
-                <span>Месяц бесплатно</span>
-                <p>Приведи друга, получи абонемент в подарок</p>
-                <a href="#">подробнее</a>
-              </li>
-              <li class="promotion__offer">
-                <span>Скидка 20%</span>
-                <p>Корпоративный фитнес с командой</p>
-                <a href="#">подробнее</a>
-              </li>
-            </ul>
+            <li class="promotions__offer">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+              <a href="#">подробнее</a>
+            </li>
+            <li class="promotions__offer">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с&nbsp;командой</p>
+              <a href="#">подробнее</a>
+            </li>
           </ul>
         </section>
-
         <section class="reviews container">
           <h2 class="title">Отзывы</h2>
           <div class="reviews__slider swiper">
@@ -1232,7 +1233,8 @@
                 </div>
                 <h3>Зоя Маркова</h3>
                 <p>
-                  &laquo;Комфортный, чистый и&nbsp;светлый клуб. Приветливый персонал, удобная парковка.&raquo;
+                  &laquo;Комфортный, чистый и&nbsp;светлый клуб. Приветливый
+                  персонал, удобная парковка.&raquo;
                 </p>
               </li>
             </ul>
@@ -1350,7 +1352,7 @@
           </nav>
           <ul class="footer__social social">
             <li>
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Мы в вконтакте.">
                 <svg
                   class="social__svg"
                   width="25"
@@ -1364,7 +1366,11 @@
               </a>
             </li>
             <li>
-              <a class="social__link" href="#">
+              <a
+                class="social__link"
+                href="#"
+                aria-label="Мы в одноклассниках."
+              >
                 <svg
                   class="social__svg"
                   width="25"
@@ -1379,7 +1385,7 @@
             </li>
 
             <li>
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Мы в реддит.">
                 <svg
                   class="social__svg"
                   width="25"
