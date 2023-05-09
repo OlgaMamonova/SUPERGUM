@@ -2,6 +2,10 @@ const playVideo = () => {
   const buttonPlay = document.querySelector('.about__video-button');
   const videoFraim = document.querySelector('.about__video-frame');
 
+  if (!buttonPlay) {
+    return;
+  }
+
   const onButtonPlayClick = () => {
     const src = videoFraim.dataset.src;
     videoFraim.setAttribute('src', src);

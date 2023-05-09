@@ -16,7 +16,7 @@
 
 .advantages h2 {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   padding-left: 10px;
 
   @include vp-1199 {
@@ -33,13 +33,10 @@
 }
 
 .advantages__card {
+  position: relative;
   display: flex;
-  gap: 0 30px;
+  gap: 0 10px;
   justify-content: space-between;
-
-  @include vp-1199 {
-    gap: 0 29px;
-  }
 
   @include vp-767 {
     flex-direction: column;
@@ -52,14 +49,12 @@
 }
 
 .advantages__list {
-  position: relative;
   padding: 0;
   list-style-type: none;
   display: grid;
   width: 89.66%;
   margin: 0 auto;
-  padding-left: 20px;
-  grid-template-columns: 31.47% 23.52% 32.69%;
+  grid-template-columns: 32.8% 23.1% 32.2%;
   grid-template-rows: auto;
   column-gap: 60px;
   row-gap: 151px;
@@ -79,13 +74,12 @@
   }
 }
 
-.advantages__list::after,
-.advantages__list::before {
+.advantages__card--lined::after {
   content: "";
   position: absolute;
   height: 2px;
-  width: 32.69%;
-  top: 50%;
+  width: 100%;
+  bottom: -77px;
   background-color: rgba($color: $color-crimson, $alpha: 0.2);
 
   @include vp-1199 {
@@ -93,11 +87,7 @@
   }
 }
 
-.advantages__list::after {
-  left: 0;
-}
-
-.advantages__list::before {
+.advantages__card--lined::after {
   right: 0;
 }
 
@@ -108,6 +98,7 @@
   font-size: 71px;
   line-height: 64px;
   font-weight: 700;
+  min-width: 92px;
   background-color: $color-dark-blue;
   background-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   background-clip: text;
@@ -116,10 +107,36 @@
   @include vp-1199 {
     font-size: 58px;
     line-height: 58px;
+    min-width: 78px;
   }
 
   @include vp-767 {
+    min-width: none;
     align-items: center;
+  }
+}
+
+.advantages__card--odd {
+  padding-left: 20px;
+
+  @include vp-1199 {
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+  }
+}
+
+.advantages__card--odd span {
+  min-width: 128px;
+
+  @include vp-1199 {
+    min-width: 108px;
+  }
+
+  @include vp-767 {
+    min-width: none;
   }
 }
 
@@ -158,14 +175,6 @@
 
   @include vp-767 {
     text-align: center;
-  }
-}
-
-.advantages__card--last .advantages__card-wrapper {
-  padding-left: 2px;
-
-  @include vp-767 {
-    padding-left: 32px;
   }
 }
 
