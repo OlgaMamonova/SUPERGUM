@@ -2362,11 +2362,8 @@ button,
   height: 2px;
   width: 100%;
   bottom: -77px;
-  background-color: rgba(209, 10, 66, 0.2);
-}
-
-.advantages__card--lined::after {
   right: 0;
+  background-color: rgba(209, 10, 66, 0.2);
 }
 
 .advantages__card span {
@@ -2388,6 +2385,7 @@ button,
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  word-wrap: break-word;
 }
 
 .advantages__card--odd {
