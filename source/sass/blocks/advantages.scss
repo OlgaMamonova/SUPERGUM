@@ -80,15 +80,12 @@
   height: 2px;
   width: 100%;
   bottom: -77px;
+  right: 0;
   background-color: rgba($color: $color-crimson, $alpha: 0.2);
 
   @include vp-1199 {
     width: 0;
   }
-}
-
-.advantages__card--lined::after {
-  right: 0;
 }
 
 .advantages__card span {
@@ -103,6 +100,7 @@
   background-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  word-wrap: break-word;
 
   @include vp-1199 {
     font-size: 58px;
