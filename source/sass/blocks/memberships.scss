@@ -275,6 +275,7 @@
 .memberships__info-card:hover,
 .memberships__info-card:focus-within {
   outline: none;
+  position: relative;
 
   &::before {
     content: "";

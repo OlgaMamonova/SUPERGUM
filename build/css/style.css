@@ -2098,6 +2098,7 @@ button,
 .memberships__info-card:hover,
 .memberships__info-card:focus-within {
   outline: none;
+  position: relative;
 }
 
 .memberships__info-card:hover::before,
@@ -2576,6 +2577,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 28px 35px 36px;
+  position: relative;
 }
 
 .promotions__offer::before {
