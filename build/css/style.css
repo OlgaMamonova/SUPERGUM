@@ -2575,6 +2575,10 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 28px 35px 36px;
+}
+
+.promotions__offer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2586,7 +2590,6 @@ button,
   border-image: -webkit-gradient(linear, right bottom, left top, from(#00359f), to(#d10a42));
   border-image: linear-gradient(to left top, #00359f, #d10a42);
   border-image-slice: 1;
-  padding: 28px 35px 36px;
 }
 
 .promotions__offer h3 {
