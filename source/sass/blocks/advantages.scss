@@ -92,19 +92,10 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  font-size: 71px;
-  line-height: 64px;
-  font-weight: 700;
   min-width: 92px;
-  background-color: $color-dark-blue;
-  background-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   word-wrap: break-word;
 
   @include vp-1199 {
-    font-size: 58px;
-    line-height: 58px;
     min-width: 78px;
   }
 
@@ -112,6 +103,27 @@
     min-width: none;
     align-items: center;
   }
+}
+
+.advantages__card b {
+  font-size: 71px;
+  line-height: 64px;
+  font-weight: 700;
+  background-color: $color-dark-blue;
+  background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  word-wrap: break-word;
+
+  @include vp-1199 {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.advantages__card--first b {
+  background-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
 }
 
 .advantages__card--odd {
@@ -139,7 +151,7 @@
 }
 
 .advantages__card small {
-  background-image: none;
+  color: $color-dark-blue;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;

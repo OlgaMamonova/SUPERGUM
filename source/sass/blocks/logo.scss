@@ -1,23 +1,6 @@
 .logo {
-  font-family: $ff-alumni-sans;
-  font-size: 36px;
-  line-height: 43.2px;
-  letter-spacing: 0.7px;
-  font-weight: 600;
-  color: $color-white;
-
-  @include vp-1199 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
-    letter-spacing: 0.4px;
-  }
-
-  @include vp-767 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-  }
+  display: block;
+  line-height: 0;
 
   &:hover,
   &:focus {
@@ -26,5 +9,17 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.logo__svg {
+  @include vp-1199 {
+    width: 81px;
+    height: 16px;
+  }
+
+  @include vp-767 {
+    width: 67px;
+    height: 13px;
   }
 }
