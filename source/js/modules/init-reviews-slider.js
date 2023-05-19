@@ -8,7 +8,6 @@ const initReviewsSlider = () => {
       new Swiper('.reviews__slider', {
         direction: 'horizontal',
         slidesPerView: '1',
-        autoHeight: true,
         spaceBetween: 32,
         navigation: {
           nextEl: '.reviews__slider-button-next',

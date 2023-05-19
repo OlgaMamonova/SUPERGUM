@@ -1,13 +1,14 @@
 .about {
   padding-top: 120px;
-  padding-bottom: 119px;
+  padding-bottom: 235px;
   display: grid;
   grid-template-columns: 35.8% 56.9%;
   column-gap: 85px;
+  position: relative;
 
   @include vp-1199 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 183px;
     display: block;
   }
 
@@ -175,23 +176,28 @@
   }
 }
 
-.about__video {
-  position: relative;
-  width: 87.7%;
-  margin-top: -113px;
-  margin-left: 105.3%;
+.about__video-wrapper {
+  position: absolute;
+  width: 29.1%;
+  top: 408px;
+  right: 32.27%;
 
   @include vp-1199 {
-    width: 39.23%;
-    margin-top: -84px;
-    margin-left: 30.38%;
+    width: 34.7%;
+    top: auto;
+    bottom: 100px;
+    right: 32.69%;
   }
 
   @include vp-767 {
     width: 100%;
-    margin-top: 0;
-    margin-left: 0;
+    position: static;
   }
+}
+
+.about__video {
+  position: relative;
+  width: 100%;
 }
 
 .about__video-frame {

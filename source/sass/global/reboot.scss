@@ -80,25 +80,3 @@ button,
 [type="submit"] {
   appearance: none;
 }
-
-// scroll-bar
-/* Работает в Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: $color-whisper transparent;
-}
-
-/* Работает в Chrome, Edge и Safari */
-// *::-webkit-scrollbar {
-//   width: 3px;
-//   z-index: 1;
-// }
-
-// *::-webkit-scrollbar-track {
-//   background: transparent;
-// }
-
-// *::-webkit-scrollbar-thumb {
-//   background-color: $color-whisper;
-//   border-radius: 10px;
-// }

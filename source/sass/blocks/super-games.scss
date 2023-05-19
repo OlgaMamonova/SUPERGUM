@@ -61,6 +61,8 @@
 .super-games__content-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
   margin-bottom: 15px;
 
   @include vp-1199 {
@@ -136,6 +138,7 @@
 
 .super-games__content a {
   padding: 24px;
+  text-align: center;
 
   @include vp-1199 {
     font-size: 10px;

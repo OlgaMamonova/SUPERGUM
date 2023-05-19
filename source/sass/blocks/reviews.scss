@@ -4,7 +4,7 @@
 
   @include vp-1199 {
     padding-top: 46px;
-    padding-bottom: 77px;
+    padding-bottom: 98px;
   }
 
   @include vp-767 {
@@ -46,10 +46,10 @@
 .reviews__slider-button-next,
 .reviews__slider-button-prev {
   position: absolute;
-  top: 105px;
+  top: 43%;
 
   @include vp-767 {
-    top: 158px;
+    top: 47%;
   }
 }
 
