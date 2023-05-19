@@ -2097,6 +2097,7 @@ button,
 .memberships__info-card:focus-within {
   outline: none;
   position: relative;
+  z-index: 0;
 }
 
 .memberships__info-card:hover::before,
@@ -2112,6 +2113,7 @@ button,
   border-image: -webkit-gradient(linear, right bottom, left top, from(#00359f), to(#d10a42));
   border-image: linear-gradient(to left top, #00359f, #d10a42);
   border-image-slice: 1;
+  z-index: -1;
 }
 
 .memberships__info-card:hover .memberships__buy-button,
@@ -2580,6 +2582,7 @@ button,
   flex-direction: column;
   padding: 28px 35px 36px;
   position: relative;
+  z-index: 0;
 }
 
 .promotions__offer::before {
@@ -2594,6 +2597,7 @@ button,
   border-image: -webkit-gradient(linear, right bottom, left top, from(#00359f), to(#d10a42));
   border-image: linear-gradient(to left top, #00359f, #d10a42);
   border-image-slice: 1;
+  z-index: -1;
 }
 
 .promotions__offer h3 {

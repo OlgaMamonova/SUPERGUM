@@ -140,6 +140,7 @@
   flex-direction: column;
   padding: 28px 35px 36px;
   position: relative;
+  z-index: 0;
 
   &::before {
     content: "";
@@ -151,6 +152,7 @@
     border: 7px solid #00359f;
     border-image: linear-gradient(to left top, #00359f, #d10a42);
     border-image-slice: 1;
+    z-index: -1;
   }
 
   @include vp-767 {
